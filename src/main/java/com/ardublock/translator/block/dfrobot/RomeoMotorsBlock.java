@@ -33,7 +33,7 @@ public class RomeoMotorsBlock extends TranslatorBlock
 			"    }\n" + 
 			"  }\n" + 
 			"  \n" + 
-			"  \n" + 
+			"  speed = -speed;\n" + 
 			"  if (speed == 0)\n" + 
 			"  {\n" + 
 			"    digitalWrite(speedPin, LOW);\n" + 
