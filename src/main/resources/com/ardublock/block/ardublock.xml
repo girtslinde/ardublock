@@ -8765,6 +8765,37 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+        <!-- Girts -->
+		<BlockGenus name="girts_touch" kind="data" color="0 0 136"
+			initlabel="bg.girts_touch" editable-label="yes">			
+			<description>
+				<text>touch sensor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="DuinoEDU_D2" label="D2" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="plug" />				
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="girts_i2c_servo" kind="command" color="0 0 136"
+			initlabel="bg.girts_i2c_servo">
+			<description>
+				<text>I2C Servo</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="DuinoEDU_D2" label="D2" />
+				</BlockConnector>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.angle">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>			
+		</BlockGenus>
+		  																		
 	</BlockGenuses>
 
 	<BlockFamilies>
@@ -9576,6 +9607,19 @@
 			    <BlockGenusMember>little_bits_vibration_motor</BlockGenusMember>
 			    <BlockGenusMember>little_bits_synthspeaker</BlockGenusMember>
 			</BlockDrawer>
+			
+			<BlockDrawer button-color="0 0 136" name="bd.girts">
+				<BlockGenusMember>girts_touch</BlockGenusMember>
+				<BlockGenusMember>girts_i2c_servo</BlockGenusMember>
+				<BlockGenusMember>ke-psd</BlockGenusMember>
+				<BlockGenusMember>df_romeo_motors</BlockGenusMember>
+				<BlockGenusMember>df_romeo_motor_stop</BlockGenusMember>
+				<BlockGenusMember>ultrasonic</BlockGenusMember>
+				<BlockGenusMember>DuinoEDU_Ultrasonic</BlockGenusMember>
+				<BlockGenusMember>df_buzzer</BlockGenusMember>
+				<BlockGenusMember>df_buzzer_tone</BlockGenusMember>
+				<BlockGenusMember>df_buzzer_tone_delay</BlockGenusMember>
+			</BlockDrawer> 	
 			
 			<!-- keenlon -->			
 			<BlockDrawer button-color="20 150 30" name="bd.ke-keenlon">
