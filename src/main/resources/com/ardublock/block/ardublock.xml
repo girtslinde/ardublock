@@ -8796,6 +8796,19 @@
 			</BlockConnectors>			
 		</BlockGenus>
 		  																		
+		<BlockGenus name="girts_romeo_button" kind="data" color="0 0 136"
+			initlabel="bg.girts_romeo_button" editable-label="no">			
+			<description>
+				<text>romeo button</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.num">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="plug" />				
+			</BlockConnectors>
+		</BlockGenus>
+		
 	</BlockGenuses>
 
 	<BlockFamilies>
@@ -9611,6 +9624,7 @@
 			<BlockDrawer button-color="0 0 136" name="bd.girts">
 				<BlockGenusMember>girts_touch</BlockGenusMember>
 				<BlockGenusMember>girts_i2c_servo</BlockGenusMember>
+				<BlockGenusMember>girts_romeo_button</BlockGenusMember>
 				<BlockGenusMember>ke-psd</BlockGenusMember>
 				<BlockGenusMember>df_romeo_motors</BlockGenusMember>
 				<BlockGenusMember>df_romeo_motor_stop</BlockGenusMember>
